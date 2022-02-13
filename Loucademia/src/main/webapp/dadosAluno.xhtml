@@ -1,0 +1,84 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>	
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://xmlns.jcp.org/jsf/core"
+     xmlns:h="http://xmlns.jcp.org/jsf/html"
+     xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+     xmlns:jsf="http://xmlns.jcp.org/jsf"
+     lang="pt-br">
+  
+ 
+    <ui:composition template="layout.xhtml">
+ 	 <ui:define name="conteudo">
+      <h1> Novo Aluno </h1>
+  
+      <div id="infoMessage">
+ 	    (Aqui vai eventual mensagem de sistema confirmando sucesso ou erro)
+      </div>
+ 
+      <br/>
+     <form jsf:id="form">
+ 	  <fieldset>
+ 	    <legend> Dados Pessoais </legend>
+ 	    <label for="nome">Nome:</label><br/>
+ 	    <input type="text" jsf:value="#{alunoBean.aluno.nome}" id="nome" /><br />
+ 	    <label for="sexo">Sexo</label><br />
+ 	    <select jsf:value="#{alunoBean.aluno.sexo}" id="sexo" size="0">
+             <f:selectItems value="#{dataBean.sexos}" />
+ 	    </select><br />
+ 	    <label for="rg">RG</label><br />
+ 	    <input type="text" jsf:value="#{alunoBean.aluno.rg}" id="rg" /><br />
+ 		<label for="dataDeNascimento">Data de Nascimento:</label><br />
+ 	    <input type="date" jsf:value="#{alunoBean.aluno.dataNascimento}" id="dataDeNascimento">
+ 	    	<f:convertDateTime type="localDate" pattern="yyyy-MM-dd" />
+ 	    </input>
+ 	  </fieldset>
+ 	
+ 	<br/>
+ 	<fieldset>
+ 		<legend>Situação</legend>
+ 		<label for="situacao">Situação</label><br/>
+ 		<select jsf:value="#{alunoBean.aluno.situacao}" id="situacao" size="0">
+ 			<f:selectItems value="#{dataBean.situacoes}" />
+ 		</select>
+ 	</fieldset>
+ 	<br/>
+ 	
+ 	<fieldset>
+ 		<legend>Endereço</legend>
+ 		<label for="rua">Rua</label><br/>
+ 		<input type="text" jsf:value="#{alunoBean.aluno.endereco.rua}" id="rua" /><br/>
+ 		<label for="numero">Número</label><br/>
+ 		<input type="text" jsf:value="#{alunoBean.aluno.endereco.numero}" id="numero" /><br/>
+ 		<label for="complemento">Complemento</label><br/>
+ 		<input type="text" jsf:value="#{alunoBean.aluno.endereco.complemento}" id="complemento" /><br/>
+ 		<label for="cidade">Cidade</label><br/>
+ 		<input type="text" jsf:value="#{alunoBean.aluno.endereco.cidade}" id="cidade" /><br/>
+ 		<label for="estado">Estado</label><br/>
+ 		<select  jsf:value="#{alunoBean.aluno.endereco.estado.sigla}" id="estado" size="0" >
+ 		    <f:selectItems value="#{dataBean.estados}" var="e" itemLabel="#{e.nome}" itemValue="#{e.sigla}" />
+ 		</select><br/> 
+ 		<label for="cep">CEP</label><br/>
+ 		<input type="text" jsf:value="#{alunoBean.aluno.endereco.cep}" id="cep"/>
+ 	</fieldset>
+ 	
+ 	<br/>
+ 	
+ 	<fieldset>
+ 	  <legend>Contato</legend>
+ 	  <label for="email">E-mail</label><br/>
+ 	  <input type="email" jsf:value="#{alunoBean.aluno.email}" id="email" /><br/>
+      <label for="telefoneCelularDDD">Telefone Celular</label><br/>
+ 	  <input type="tel" jsf:value="#{alunoBean.aluno.telefone.dddCelular}" id="telefoneCelularDDD" />&#160;
+ 	  <input type="tel" jsf:value="#{alunoBean.aluno.telefone.numeroCelular}" id="telefoneCelularNumero" /><br/>
+ 	  <label for="telefoneFixo">Telefone Residencial</label><br/>
+ 	  <input type="tel" jsf:value="#{alunoBean.aluno.telefone.dddFixo}" id="telefoneFixoDDD" />&#160;
+ 	  <input type="tel" jsf:value="#{alunoBean.aluno.telefone.numeroFixo}" id="telefoneFixoNumero" />
+ 	</fieldset>
+ 	<br/>
+ 	<input type="submit" value="Gravar" jsf:action="#{alunoBean.gravar}" />
+ 	<input type="button" value="Relatório de acessos" />
+     </form>
+    </ui:define>
+   </ui:composition>
+  </html>	

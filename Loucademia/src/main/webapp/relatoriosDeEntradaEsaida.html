@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="ISO-8859-1">
+	<title> Loucademia </title>
+	<link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+
+</head>
+<body>
+ <header>
+  <img src= "images/Loucademia_Logotipo.png">
+  <nav>
+  	<div> 
+  	<a href="novoAluno.html"> Novo Aluno </a><br>
+  	<a href="pesquisaDeAluno.html"> Pesquisa de Aluno </a><br>
+  	<a href="controleDeAcesso.html"> Controle de Acesso </a><br>
+  	<a href="relatoriosDeEntradaESaida.html"> Relatorios de Entradas/Saídas </a><br>
+  	<a href="relatorioDeSituacoes.html"> Relatorios de Situações </a><br>
+  	</div>
+  </nav>
+ 
+ </header>
+  <h1> Relatório de Entradas e Saídas </h1>
+  <div id="infoMessage">
+ 	(Aqui uma eventual mensagem do sistema confirmando sucesso ou erro )
+ 
+ </div>
+ <br>
+	 <form>
+ 	<fieldset>
+ 	 <legend>Parâmetros de Entrada e Saída</legend>
+ 	 <label for="id">ID:</label><br>
+ 	 <input type="text" name="id" id="id"><br>
+ 	 
+ 	 <label for="dataInicial">Data Inicial:</label><br>
+ 	 <input type="date" name="dataInicial" id="dataInicial"><br>
+ 	 
+ 	 
+ 	 <label for="dataFinal">Data Inicial:</label><br>
+ 	 <input type="date" name="dataFinal" id="dataFinal">
+ 	 >
+ 	</fieldset><br>
+ 	<input type="submit" value="Gerar Relatório">
+  </form>
+  
+  <table>
+  	<tr>
+  		<th>ID</th>
+  		<th>Nome</th>
+  		<th>Entrada</th>
+  		<th>Saída</th>
+  		<th>Duração</th>
+  	</tr>
+  	<tr>
+  		<td>1</td>
+  		<td>Bastião</td>
+  		<td>25/01/2022 09:00:10</td>
+  		<td>25/01/2022 11:00:50</td>
+  		<td>02:00:40</td>
+  	</tr>
+  		<tr>
+  		<td>1</td>
+  		<td>Bastiana</td>
+  		<td>25/01/2022 09:00:00</td>
+  		<td>25/01/2022 11:00:00</td>
+  		<td>02:00:00</td>
+  	</tr>
+  		<tr>
+  		<td>1</td>
+  		<td>Bastiãzinho</td>
+  		<td>25/01/2022 10:00:00</td>
+  		<td>25/01/2022 11:00:00</td>
+  		<td>01:00:00</td>
+  	</tr>
+  
+  </table>
+  
+  
+  
+
+</body>
+
+
+
+
+</html>

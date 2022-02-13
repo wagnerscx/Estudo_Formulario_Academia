@@ -1,0 +1,184 @@
+
+*
+{
+	font-family: "Arial";
+	
+	
+}
+body
+{
+	background:url(../images/gyn.png);
+	background-size:cover;
+	text-align: center;	
+    
+}
+
+ 
+nav a
+{
+	color:"black";
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+nav a:hover
+{
+	text-decoration: underline;
+}
+
+h1
+{
+	color:#8bbf18;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 20px;
+	
+	 width: 400px;
+	 border: 2px solid #8bbf18;
+     padding: 10px;
+     border-radius: 25px;
+}
+
+h1,div#infoMessage,fieldset,table
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div#infoMessage
+{	width: 400px;
+	background-color:#8bbf18;
+     border: 2px solid #8bbf18;
+     padding: 10px;
+     border-radius: 25px;
+     color:#d40000;
+}
+
+fieldset
+{
+	background-color:#483D8B;
+	width: 400px;
+	text-align: left;
+	border-radius:5px;
+	border: 0px;
+}
+
+legend
+{
+	background-color: #ffffff;
+	border-radius:5px;
+	border: 0px;
+	padding-top:5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-weight: bold;
+}
+
+legend, labe
+{
+	color:#8d02ae;
+}
+
+
+input,
+select
+{
+ border: 1px solid #8d02ae;
+ margin-bottom: 7px;	
+}
+
+input[type=text]#nome,
+input[type=text]#rua,
+input[type=email]
+{
+	width:95%;
+}
+
+input[type=tel]#telefoneCelularDDD,
+input[type=tel]#telefoneFixoDDD,
+input[type=tel]#telefoneDDD,
+input[type=text]#id
+{
+	width: 30px;
+}
+
+input[type=tel]#telefoneCelularNumero,
+input[type=tel]#telefoneFixoNumero,
+input[type=tel]#telefoneNumero
+{
+	width: 90px;
+}
+
+
+input[type=button],
+input[type=submit]
+{
+	background-color:#8bbf18;
+	 border: 2px solid #8bbf18;
+     padding: 10px;
+     border-radius: 25px;
+     color:#ffffff;
+     font-weight: bold;
+     text-transform:uppercase;
+     padding: 5px 8px;
+	
+}
+
+input[type=button]:hover,
+input[type=submit]:hover
+{
+	background-color:#a0de1c;
+	border-bottom: 3px solid #8bbf18;
+}
+
+table
+{
+	background-color: #ffffff;
+	font-size: 14px;
+	border-spacing: 1px;
+	border-collapse: separate;
+}
+
+th
+{
+	background-color: #5b7b1d;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 3px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #f3e6f7;
+}
+tr:nth-child(odd)
+{
+	background-color: #ffffff;
+}
+
+td
+{
+	padding:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

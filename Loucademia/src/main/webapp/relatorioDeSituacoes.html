@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="ISO-8859-1">
+	<title> Loucademia </title>
+	<link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+</head>
+<body>
+
+ <header>
+  <img src= "images/Loucademia_Logotipo.png">
+  <nav>
+  	<div> 
+  	<a href="novoAluno.html"> Novo Aluno </a><br>
+  	<a href="pesquisaDeAluno.html"> Pesquisa de Aluno </a><br>
+  	<a href="controleDeAcesso.html"> Controle de Acesso </a><br>
+  	<a href="relatoriosDeEntradaESaida.html"> Relatorios de Entradas/Saídas </a><br>
+  	<a href="relatorioDeSituacoes.html"> Relatorios de Situações </a><br>
+  	</div>
+  </nav>
+ 
+ </header>
+<h1>Relatório de Situações</h1>
+ 
+ <div id="infoMessage">
+ 	(Aqui uma eventual mensagem do sistema confirmando sucesso ou erro )
+ 
+ </div>
+ <br>
+ 
+ <form> 
+  <fieldset>
+  <label for="situacao">Situação</label><br>
+ 		<select name="situacao" id="situacao">
+ 			<option>Ativo</option>
+ 			<option>Inativo</option>
+ 			<option>Pendência</option>
+ 		</select>
+ </fieldset>
+ <br>
+ <input type="submit" value="Gerar relatório">
+</form>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Nome</th>
+		<th>Situação</th>
+		<th>Celular</th>
+		<th>Fixo</th>
+		<th>Ações</th>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td>Goku</td>
+	<td>Ativo</td>
+	<td>41 9999-9999</td>
+	<td>41 9999-9999</td>
+	<td>
+		<input type="button" value="Editar">
+	</td>
+	</tr>
+	<tr>
+	<td>2</td>
+	<td>Gohan</td>
+	<td>Inativo</td>
+	<td>41 9991-9999</td>
+	<td>41 9991-9999</td>
+	<td>
+		<input type="button" value="Editar">
+	</td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td>Vegeta</td>
+	<td>Ativo</td>
+	<td>41 9899-9999</td>
+	<td>41 9899-9999</td>
+	<td>
+		<input type="button" value="Editar">
+	</td>
+	</tr>
+	<tr>
+	<td>4</td>
+	<td>Trunks</td>
+	<td>Ativo</td>
+	<td>41 8999-9999</td>
+	<td>41 8999-9999</td>
+	<td>
+		<input type="button" value="Editar">
+	</td>
+	</tr>
+
+
+</table>
+
+
+
+</body>
+
+
+
+
+</html>
